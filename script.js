@@ -32,13 +32,16 @@ function clickButton() {
     let y_up = y(x_up, 0);
     let z_up = z(x_up, y_up);
 
+    ans.innerHTML = `Iteration - 1: <br>x = ${x_up}<br>y = ${y_up}<br>z = ${z_up}<br><br>`;
+    
+
     if (iter.value > 1) {
         for (let i = 2; i <= iter.value; i++) {
             x_up = x(y_up, z_up);
             y_up = y(x_up, z_up);
             z_up = z(x_up, y_up);
+
+            ans.innerHTML += `Iteration - ${i}: <br>x = ${x_up}<br>y = ${y_up}<br>z = ${z_up}<br><br>`;
         }
     }
-
-    ans.innerHTML = `x = ${x_up}<br>y = ${y_up}<br>z = ${z_up}`;
 }
