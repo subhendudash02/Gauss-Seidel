@@ -17,9 +17,13 @@ let cons3 = document.querySelector("#const3");
 
 let iter = document.querySelector("#iter");
 
+let output = document.querySelector("#output");
 let ans = document.querySelector("#ans");
 
+output.style.display = "none";
+
 function clickButton() {
+    output.style.display = "block";
     let x = (y1, z1) => {return ((cons1.value - (b1.value * y1) - (c1.value * z1)) / a1.value)};
     let y = (x1, z1) => {return ((cons2.value - (a2.value * x1) - (c2.value * z1)) / b2.value)};
     let z = (x1, y1) => {return ((cons3.value - (a3.value * x1) - (b3.value * y1)) / c3.value)};

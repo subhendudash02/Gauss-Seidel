@@ -11,31 +11,38 @@
 <body>
     <h1>Gauss-Seidel Method</h1>
 
-    <div id="equations">
-        <h2>First Equation</h2>
-        <input type="text" id="a1"> x +
-        <input type="text" id="b1"> y + 
-        <input type="text" id="c1"> z = 
-        <input type="text" id="const1">
-
-        <h2>Second Equation</h2>
-        <input type="text" id="a2"> x +
-        <input type="text" id="b2"> y + 
-        <input type="text" id="c2"> z = 
-        <input type="text" id="const2">
-
-        <h2>Third Equation</h2>
-        <input type="text" id="a3"> x +
-        <input type="text" id="b3"> y + 
-        <input type="text" id="c3"> z = 
-        <input type="text" id="const3">
-
-        <h2>Iterations</h2>
-        <input type="text" id="iter"><br><br>
+    <div id="main">
+        <div id="equations">
+            <h2>First Equation</h2>
+            <input type="text" id="a1"> x +
+            <input type="text" id="b1"> y + 
+            <input type="text" id="c1"> z = 
+            <input type="text" id="const1">
+    
+            <h2>Second Equation</h2>
+            <input type="text" id="a2"> x +
+            <input type="text" id="b2"> y + 
+            <input type="text" id="c2"> z = 
+            <input type="text" id="const2">
+    
+            <h2>Third Equation</h2>
+            <input type="text" id="a3"> x +
+            <input type="text" id="b3"> y + 
+            <input type="text" id="c3"> z = 
+            <input type="text" id="const3">
+    
+            <h2>Iterations</h2>
+            <input type="text" id="iter"><br><br>
+    
+            <button onclick="clickButton()" id="submit">Get the answer</button>
+        </div>
+    
+        <div id="output">
+            <h3>Output</h3>
+            <p id="ans"></p>
+        </div>
     </div>
-
-    <button onclick="clickButton()">Submit</button>
-    <h3 id="ans"></h3>
+    
 </body>
     <script src="script.js"></script>
 </html>
