@@ -16,4 +16,4 @@ This website determines the solution of set of 3 variable equations by using Gau
 
 Licensed Under MIT License
 
-Copyright (c) 2021 Subhendu Dash
+Copyright (c) 2022 Subhendu Dash
