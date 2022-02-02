@@ -36,6 +36,10 @@ function clickButton() {
     
 
     if (iter.value > 1) {
+        if (iter.value > 100) {
+            iter.value = 100;
+        }
+
         for (let i = 2; i <= iter.value; i++) {
             x_up = x(y_up, z_up);
             y_up = y(x_up, z_up);
