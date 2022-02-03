@@ -16,6 +16,7 @@ let c3 = document.querySelector("#c3");
 let cons3 = document.querySelector("#const3");
 
 let iter = document.querySelector("#iter");
+let round = document.querySelector("#round");
 
 let output = document.querySelector("#output");
 let ans = document.querySelector("#ans");
@@ -32,7 +33,9 @@ function clickButton() {
     let y_up = y(x_up, 0);
     let z_up = z(x_up, y_up);
 
-    ans.innerHTML = `Iteration - 1: <br>x = ${x_up}<br>y = ${y_up}<br>z = ${z_up}<br><br>`;
+    ans.innerHTML = `Iteration - 1: <br>x = ${math.round(x_up, round.value)}<br>
+                    y = ${math.round(y_up, round.value)}<br>
+                    z = ${math.round(z_up, round.value)}<br><br>`;
     
 
     if (iter.value > 1) {
@@ -45,7 +48,9 @@ function clickButton() {
             y_up = y(x_up, z_up);
             z_up = z(x_up, y_up);
 
-            ans.innerHTML += `Iteration - ${i}: <br>x = ${x_up}<br>y = ${y_up}<br>z = ${z_up}<br><br>`;
+            ans.innerHTML += `Iteration - ${i}: <br>x = ${math.round(x_up, round.value)}<br>
+                            y = ${math.round(y_up, round.value)}<br>
+                            z = ${math.round(y_up, round.value)}<br><br>`;
         }
     }
 }

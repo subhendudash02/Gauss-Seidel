@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gauss-Seidel Method</title>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.1.1/math.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,9 +31,12 @@
             <input type="text" id="b3"> y + 
             <input type="text" id="c3"> z = 
             <input type="text" id="const3">
-    
+            
             <h2>Iterations</h2>
-            <input type="text" id="iter"><br><br>
+            <input type="text" id="iter"><br>
+
+            <h2>Round</h2>
+            <input type="text" id="round" value=5><br><br>
     
             <button onclick="clickButton()" id="submit">Get the answer</button>
         </div>

@@ -3,20 +3,20 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 2.5%;
-    background: linear-gradient(to right, #cb2d3e, #ef473a);
+    background: linear-gradient(to right, #cb2d3e, #ef473c);
 }
 
 h1 {
     text-align: center;
 }
 
-#a1, #b1, #c1, #a2, #b2, #c2, #a3, #b3, #c3, #const1, #const2, #const3, #iter {
+input[type=text] {
     padding: 1%;
     width: 5%;
     text-align: center;
 }
 
-#iter {
+#iter, #round {
     width: 10%;
 }
 
@@ -51,7 +51,7 @@ h1 {
 }
 
 @media only screen and (max-width: 768px){
-    #main {
+    #main, #division {
         flex-direction: column;
     }
 
@@ -60,7 +60,7 @@ h1 {
         margin: 2%;
     }
 
-    #a1, #b1, #c1, #a2, #b2, #c2, #a3, #b3, #c3, #const1, #const2, #const3{
+    input[type=text]{
         width: 10%;
     }
 
