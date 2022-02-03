@@ -64,7 +64,7 @@ input[type=text] {
         width: 10%;
     }
 
-    #iter {
+    #iter, #round {
         width: 30%;
     }
 }
