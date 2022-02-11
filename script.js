@@ -50,7 +50,7 @@ function clickButton() {
 
             ans.innerHTML += `Iteration - ${i}: <br>x = ${math.round(x_up, round.value)}<br>
                             y = ${math.round(y_up, round.value)}<br>
-                            z = ${math.round(y_up, round.value)}<br><br>`;
+                            z = ${math.round(z_up, round.value)}<br><br>`;
         }
     }
 }
